@@ -28,12 +28,8 @@ Cuba.define do
       on post do
         on param('file') do |file|
           input_path = file[:tempfile].path
-
-          output_file_name = file[:filename].split('.')
-          output_file_name[output_file_name.size - 1] = 'png'
-          output_file_name = output_file_name.join('.')
-
           output_file_name = %x[phantomjs ./codescreenshot.js #{input_path} 2>&1]
+
           send_file(output_file_name.chomp)
         end
       end
