@@ -16,12 +16,12 @@ page.open('codemirror.html', function() {
     top: 0,
     left: 0,
     width: 600,
-    height: 300
+    height: 315
   };
 
   page.viewportSize = {
     width: 600,
-    height: 300
+    height: 315
   };
 
   page.onConsoleMessage = console.log.bind(console);
