@@ -18,3 +18,4 @@ config/database.yml
 .rbenv*
 .ruby-version
 .powenv
+.DS_Store

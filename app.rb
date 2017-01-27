@@ -28,9 +28,12 @@ Cuba.define do
       on post do
         on param('file') do |file|
           input_path = file[:tempfile].path
-          output_file_name = %x[phantomjs ./codescreenshot.js #{input_path} 2>&1]
+          output_file_name = %x[phantomjs ./codescreenshot.js #{input_path} 2>&1].chomp
 
-          send_file(output_file_name.chomp)
+          file[:tempfile].unlink
+
+          send_file(output_file_name)
+          Tempfile.open(output_file_name).unlink
         end
       end
     end
