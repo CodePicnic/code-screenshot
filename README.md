@@ -2,6 +2,8 @@
 
 Handy tool to create screenshots from code snippets.
 
+![Demo](code.png "Demo")
+
 ## Requirements
 
 * [PhantomJS](http://phantomjs.org)

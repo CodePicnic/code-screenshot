@@ -1,0 +1,50 @@
+<html>
+<head>
+  <title>Code Screenshot - Make screenshots of code</title>
+  <style type="text/css">
+    body {
+      font-family: Helvetica, Arial, sans-serif;
+      color: rgba(0, 0, 0, 0.7);
+      box-sizing: border-box;
+    }
+
+    a {
+      color: rgba(30, 131, 173, 1);
+    }
+
+    h1, form {
+      display: block;
+      width: 350px;
+      margin: 40px auto;
+      text-align: center;
+    }
+
+    form input {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    form input[type="submit"] {
+      display: block;
+      width: 100%;
+      border: none;
+      padding: 10px;
+      background: rgba(58, 174, 221, 1);
+      color: rgba(255, 255, 255, 1);
+      border-radius: 2px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Code Screenshot</h1>
+  <form method="POST" action="/" enctype="multipart/form-data">
+    <input type="file" name="file">
+    <input type="submit" value="Create screenshot">
+  </form>
+  <p style="text-align: center;">
+    <a href="https://github.com/CodePicnic/code-screenshot">Fork me on GitHub</a>
+    |
+    Made with ❤️️ &nbsp;by <a href="https://codepicnic">CodePicnic</a>
+  </p>
+</body>
+</html>
