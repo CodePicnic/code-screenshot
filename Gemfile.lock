@@ -18,6 +18,7 @@ GEM
     rack-protection (1.5.3)
       rack
     safe_yaml (0.9.7)
+    tilt (2.0.5)
 
 PLATFORMS
   ruby
@@ -29,3 +30,4 @@ DEPENDENCIES
   puma
   rack
   rack-protection
+  tilt
