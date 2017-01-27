@@ -1,0 +1,31 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    cuba (3.6.0)
+      rack (~> 1.6.0)
+    cuba-api (0.6.3)
+      cuba (~> 3.1)
+      ixtlan-babel (~> 0.4)
+      multi_json (~> 1.6)
+      safe_yaml (~> 0.8)
+    cuba-sendfile (0.0.2)
+      cuba
+    ixtlan-babel (0.7.0)
+    multi_json (1.12.1)
+    puma (2.10.2)
+      rack (>= 1.1, < 2.0)
+    rack (1.6.5)
+    rack-protection (1.5.3)
+      rack
+    safe_yaml (0.9.7)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  cuba
+  cuba-api
+  cuba-sendfile
+  puma
+  rack
+  rack-protection
