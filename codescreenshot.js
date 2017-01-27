@@ -11,7 +11,7 @@ var inputFile = system.args[1],
 outputFile.push('png');
 outputFile = outputFile.join('.');
 
-page.open('codemirror.html', function() {
+page.open('codescreenshot/index.html', function() {
   page.clipRect = {
     top: 0,
     left: 0,
